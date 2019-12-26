@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html>
+  <head>
+    <script type="text/javascript" src="../scripts/toolbar.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        ui.newTxt = new Text();
+        ui.newTxt.setText('this is some text');
+        ui.fancyTxt = new Text(document.querySelector('#add'), 'nice text', 'class-name');
+        ui.submit = new Submit();
+        ui.button = new Button();
+        ui.txtField = new TextField();
+        ui.submit.setText('submit btn');
+        ui.button.setText('regular btn');
+        ui.txtField.setHint('a hint');
+      });
+    </script>
+  </head>
+  <body>
+    <div id='add'>
+    </div>
+  </body>
+</html>
